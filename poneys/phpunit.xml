@@ -1,0 +1,15 @@
+<phpunit>
+    <php>
+        <const name='CHAMP' value='15'>
+        <const name='NBPoneys' value='8'>
+    </php>   
+
+    <testsuites>
+        <testsuite name="poney">
+            <file>tests/PoneysTest.php</file>
+        </testsuite>
+        <testsuite name="MaclasseTest">
+            <file>tests/MaclasseTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
