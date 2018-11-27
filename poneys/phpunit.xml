@@ -1,15 +1,30 @@
-<phpunit>
-    <php>
-        <const name='CHAMP' value='15'>
-        <const name='NBPoneys' value='8'>
-    </php>   
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
 
     <testsuites>
-        <testsuite name="poney">
-            <file>tests/PoneysTest.php</file>
+        <testsuite name="Poneys">
+            <file>./tests/PoneysTest.php</file>
         </testsuite>
-        <testsuite name="MaclasseTest">
-            <file>tests/MaclasseTest.php</file>
+
+        <testsuite name="New">
+            <file>./tests/MaclasseTest.php</file>
         </testsuite>
     </testsuites>
+
+    <logging>
+        <log type="junit" target="./logfile.junit.xml"></log>
+    </logging>
+
+    <php>
+        <const name="CHAMP" value="25"/>
+        <const name="QUANTITE" value="4"/>
+    </php>
 </phpunit>
